@@ -1,4 +1,4 @@
-# Introduction
+# INTRODUCTION
 OfflineTV Remix of the game Dodger.
 This game uses Python 3.xx and pygame in order to run. Make sure you have both before trying to run.
 
