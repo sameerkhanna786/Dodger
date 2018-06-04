@@ -33,12 +33,6 @@ def playerHasHitBaddie(playerRect, baddies):
             return True
     return False
 
-def playerHasHitScarra(playerRect, scarras):
-    for s in scarras:
-        if playerRect.colliderect(s['rect']):
-            return True
-    return False
-
 def drawText(text, font, surface, x, y):
     textobj = font.render(text, 1, TEXTCOLOR)
     textrect = textobj.get_rect()
