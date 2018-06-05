@@ -11,7 +11,7 @@ BADDIEMAXSIZE = 50
 BADDIEMINSPEED = 2
 BADDIEMAXSPEED = 10
 ADDNEWBADDIERATE = 3
-PLAYERMOVERATE = 10
+PLAYERMOVERATE = 20
 
 def terminate():
     pygame.quit()
@@ -168,8 +168,9 @@ while True:
             if b['rect'].top > WINDOWHEIGHT:
                 baddies.remove(b)
                 score += 1
-                BADDIEMAXSPEED += 1
-                if score%20 == 0 and score != 0:
+                if BADDIEMAXSPEED < 30:
+                    BADDIEMAXSPEED += 1
+                if score%5 == 0 and score != 0:
                     print(score)
                     ADDNEWBADDIERATE += 1
 
